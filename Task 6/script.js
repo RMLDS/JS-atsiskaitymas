@@ -19,3 +19,19 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30 },
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
+
+let getUserAverageAge = (mas) => {
+  const average = mas.reduce((total, next) => total + next.age, 0) / mas.length;
+  return Number(average.toFixed(0));
+};
+console.log("Vidutinis amžius:", getUserAverageAge(users));
+
+let getUsersNames = (mas) => {
+  const names = [];
+  mas.forEach(user => {
+    names.push(user.name)
+  });
+  return names;
+};
+
+console.log(getUsersNames(users));
