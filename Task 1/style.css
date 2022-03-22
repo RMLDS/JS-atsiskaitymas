@@ -52,6 +52,13 @@ form {
   color: #fff;
 }
 
+#output {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+};
+
 /* Tablet */
 @media screen and (min-width: 768px) {
   .headline {
