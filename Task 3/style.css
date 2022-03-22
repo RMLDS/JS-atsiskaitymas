@@ -58,4 +58,29 @@
   padding: 30px;
   border-radius: 5px;
   background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#output > div {
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  #output > div {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #output > div {
+    width: 20%;
+  }
 }
