@@ -19,3 +19,20 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30, hasDog: false },
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
+
+let filterDogOwners = (mas) => {
+  mas.forEach(owner => {
+    if (owner.hasDog) {
+      console.log(owner);
+    }
+  });
+};
+// Šitame vietoj return'o tiesiai į konsolę išvedžiau visus userius su šunimis.
+
+filterDogOwners(users);
+
+let filterAdults = (mas) => {
+  return mas.filter(adult => adult.age >= 18);
+};
+
+console.log(filterAdults(users));
