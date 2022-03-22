@@ -27,3 +27,26 @@
   margin-top: 50px;
   color: #333;
 }
+
+#output {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#output > div {
+  width: 100%;
+  padding: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  #output > div {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #output > div {
+    width: 25%;
+  }
+}

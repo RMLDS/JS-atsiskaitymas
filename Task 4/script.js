@@ -10,3 +10,18 @@ bent minimalų stilių;
 -------------------------------------------------------------------------- */
 
 const ENDPOINT = 'cars.json';
+
+fetch (ENDPOINT)
+    .then(res => res.json())
+    .then(data => data.forEach(maker => {
+        document.getElementById("output").innerHTML += `
+            <div>
+                <h3>${maker.brand}</h3>
+                <p>Modeliai:${maker.models.map(model => {
+                    return " " + model;
+                })}</p>
+            </div>
+            `;
+            })
+    )
+    .catch(err => console.log("Error:", err));
